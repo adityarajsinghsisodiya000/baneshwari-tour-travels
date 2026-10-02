@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
 import { waLink } from "@/lib/site";
 
-export function WhatsAppFab({ message = "Hi Baneshwari Tour & Travels, I'd like to plan a trip." }: { message?: string }) {
+export function WhatsAppFab({ message = "राम राम सा! चित्तौड़गढ़ यात्रा plan करनी है।" }: { message?: string }) {
   return (
     <a
       href={waLink(message)}

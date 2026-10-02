@@ -7,9 +7,9 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About — Baneshwari Tour & Travels" },
-      { name: "description", content: "A small, obsessive team of trip designers crafting bespoke India journeys since 2008." },
+      { name: "description", content: "Mewar ki dharti ke log — Chittorgarh Garh darshan aur sampoorn Mewar yatra, 2008 se personal seva ke saath." },
       { property: "og:title", content: "About Baneshwari Tour & Travels" },
-      { property: "og:description", content: "Since 2008 — bespoke India journeys, WhatsApp-first, obsessively personal." },
+      { property: "og:description", content: "2008 se — Mewar yatra, WhatsApp-first, ghar-jaisi mehmaannawazi." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -20,27 +20,27 @@ export const Route = createFileRoute("/about")({
 function AboutPage() {
   return (
     <SiteShell>
-      <PageHero eyebrow="Hamara safar" title="Travel, planned by people who actually go there.">Since 2008, we've been sending small groups and families across India—one carefully plotted itinerary at a time.</PageHero>
+      <PageHero eyebrow="हमारो परिचय" title="गढ़ की धरती के लोग, यात्रा के साथी।">2008 से हम परिवारों को चित्तौड़गढ़ गढ़ और संपूर्ण मेवाड़ घुमा रहे हैं — एक-एक itinerary दिल से बनाकर।</PageHero>
 
       <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8">
         <p className="text-lg leading-relaxed text-muted-foreground">
-          Baneshwari Tour & Travels began as a two-person Bengaluru office with a single ambition — plan trips we would want to take ourselves. Led by Mr. Shivraj Singh Sisodiya, we've grown by keeping one promise: walk every trail before we sell it, and answer every WhatsApp message ourselves.
+          Baneshwari Tour & Travels की शुरुआत एक ही इरादे से हुई — ऐसी यात्रा करवाना, जैसी हम अपने परिवार को करवाएँ। Shri Shivraj Singh Sisodiya के नेतृत्व में हमने एक वादा निभाया है: हर रास्ता खुद चलकर देखो, और हर WhatsApp संदेश का जवाब खुद दो।
         </p>
         <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-          Everything you see on this site — the packages, the drivers, the guides — has been vetted personally. No black-box tour operators, no last-minute surprises. Just travel, done with care.
+          गढ़ का हर दरवाज़ा, हर कुंड, हर मंदिर — हमारे ड्राइवर और गाइड इन्हें नाम से जानते हैं। कोई बिचौलिया नहीं, कोई आखिरी-पल का झंझट नहीं। बस सच्ची मेवाड़ी मेहमाननवाज़ी।
         </p>
         <div className="mt-8 border-l-4 border-primary bg-card p-6 shadow-soft">
           <div className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Founder & Owner</div>
           <div className="mt-1 font-display text-2xl font-bold text-navy">Mr. Shivraj Singh Sisodiya</div>
-          <p className="mt-2 text-sm text-muted-foreground">Planning India journeys with a personal touch since 2008.</p>
+          <p className="mt-2 text-sm text-muted-foreground">2008 से मेवाड़ यात्रा — personal touch के साथ।</p>
         </div>
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2">
           {[
-            { icon: HeartHandshake, title: "12,000+ happy travellers", body: "Families, honeymooners, solo backpackers, corporate offsites — all sent home with stories." },
-            { icon: Compass, title: "28 states covered", body: "From Ladakh to Kanyakumari, Kutch to Kohima — we know the road less taken." },
-            { icon: ShieldCheck, title: "IATA-certified partners", body: "Airlines, hotels and transport partners audited annually for quality and safety." },
-            { icon: Award, title: "4.9/5 traveller rating", body: "Reviewed across Google, TripAdvisor and Instagram DMs — the highest bar of all." },
+            { icon: HeartHandshake, title: "12,000+ खुश यात्री", body: "परिवार, बुजुर्ग, युवा समूह — सब घर कहानियाँ लेकर लौटे।" },
+            { icon: Compass, title: "सिर्फ मेवाड़, पूरा मेवाड़", body: "चित्तौड़गढ़, उदयपुर, नाथद्वारा, कुंभलगढ़, हल्दीघाटी, राजसमंद — गली-गली की जानकारी।" },
+            { icon: ShieldCheck, title: "Verified गाड़ी व गाइड", body: "सेडान, SUV, टेम्पो ट्रैवलर — अनुभवी ड्राइवर और स्थानीय गाइड, हर साल जाँचे हुए।" },
+            { icon: Award, title: "4.9/5 यात्री rating", body: "Google, TripAdvisor और WhatsApp reviews — सबसे ऊँचा पैमाना।" },
           ].map((f) => (
             <div key={f.title} className="border border-border bg-card p-6 shadow-soft transition-transform duration-300 hover:-translate-y-1">
               <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-royal text-primary-foreground">

@@ -11,15 +11,15 @@ export function Footer() {
           <div>
             <div className="rounded-sm bg-background p-3"><BrandLogo compact /></div>
             <p className="mt-4 text-sm text-primary-foreground/70">
-              Crafting unforgettable journeys across incredible India since 2008. Family-run, WhatsApp-first, obsessively personal.
+              गढ़ में गढ़ चित्तौड़गढ़ — गढ़ दर्शन और संपूर्ण मेवाड़ यात्रा, 2008 से। WhatsApp-first, घर-जैसी सेवा।
             </p>
             <p className="mt-2 text-sm text-gold">Owner: {SITE.owner}</p>
           </div>
           <div>
             <h4 className="font-display text-sm font-semibold uppercase tracking-widest text-gold">Explore</h4>
             <ul className="mt-4 space-y-2 text-sm text-primary-foreground/80">
-              <li><Link to="/packages" className="hover:text-gold">Tour Packages</Link></li>
-              <li><Link to="/destinations" className="hover:text-gold">Destinations</Link></li>
+              <li><Link to="/packages" className="hover:text-gold">Yatra Packages</Link></li>
+              <li><Link to="/destinations" className="hover:text-gold">Mewar Circuit</Link></li>
               <li><Link to="/gallery" className="hover:text-gold">Gallery</Link></li>
               <li><Link to="/about" className="hover:text-gold">About Us</Link></li>
               <li><Link to="/contact" className="hover:text-gold">Contact</Link></li>
@@ -28,11 +28,11 @@ export function Footer() {
           <div>
             <h4 className="font-display text-sm font-semibold uppercase tracking-widest text-gold">Services</h4>
             <ul className="mt-4 space-y-2 text-sm text-primary-foreground/80">
-              <li>Custom Tour Packages</li>
-              <li>Taxi & Airport Transfers</li>
-              <li>Vehicle Rentals</li>
-              <li>Corporate Travel</li>
-              <li>Honeymoon Getaways</li>
+              <li>Garh Darshan Packages</li>
+              <li>Teerth Yatra (Sanwaliya Seth, Nathdwara)</li>
+              <li>Taxi & Station/Airport Pickup</li>
+              <li>Sedan · SUV · Tempo Traveller</li>
+              <li>Custom Family Yatra</li>
             </ul>
           </div>
           <div>
@@ -46,7 +46,7 @@ export function Footer() {
         </div>
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-primary-foreground/60 sm:flex-row">
           <p>© {new Date().getFullYear()} Baneshwari Tour & Travels. All rights reserved.</p>
-          <p>Handcrafted with care for wanderers across India.</p>
+          <p>Handcrafted with care for Mewar yatris.</p>
         </div>
       </div>
     </footer>

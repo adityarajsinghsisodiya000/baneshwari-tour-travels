@@ -6,8 +6,8 @@ import { BrandLogo } from "./BrandLogo";
 
 const NAV = [
   { to: "/", label: "Home" },
-  { to: "/packages", label: "Packages" },
-  { to: "/destinations", label: "Destinations" },
+  { to: "/packages", label: "Yatra Packages" },
+  { to: "/destinations", label: "Mewar Circuit" },
   { to: "/gallery", label: "Gallery" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
@@ -39,9 +39,9 @@ export function Header() {
           <a href={SITE.phoneHref} className="flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary">
             <Phone className="h-4 w-4" /> {SITE.phone}
           </a>
-          <a href={waLink("Hi Baneshwari Tour & Travels, I'd like to plan a trip.")} target="_blank" rel="noreferrer"
-               className="royal-button px-5 py-2.5 text-sm">
-            Book on WhatsApp
+          <a href={waLink("राम राम सा! चित्तौड़गढ़ यात्रा plan करनी है।")} target="_blank" rel="noreferrer"
+                className="royal-button px-5 py-2.5 text-sm">
+            WhatsApp पर बुक करें
           </a>
         </div>
         <button className="rounded-full border border-border p-2 text-navy lg:hidden" onClick={() => setOpen((v) => !v)} aria-label="Toggle menu">
@@ -57,9 +57,9 @@ export function Header() {
                 {n.label}
               </Link>
             ))}
-            <a href={waLink("Hi Baneshwari Tour & Travels, I'd like to plan a trip.")} target="_blank" rel="noreferrer"
+            <a href={waLink("राम राम सा! चित्तौड़गढ़ यात्रा plan करनी है।")} target="_blank" rel="noreferrer"
                className="royal-button mt-2 px-5 py-3 text-center text-sm">
-              Book on WhatsApp
+              WhatsApp पर बुक करें
             </a>
           </div>
         </div>

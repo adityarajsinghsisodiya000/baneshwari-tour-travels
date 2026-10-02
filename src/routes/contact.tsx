@@ -9,9 +9,9 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Baneshwari Tour & Travels" },
-      { name: "description", content: "Chat with Baneshwari Tour & Travels on WhatsApp, phone or email to plan your India trip." },
+      { name: "description", content: "Chittorgarh yatra ke liye WhatsApp, phone ya email par baat karein — kuch hi minute mein jawab." },
       { property: "og:title", content: "Contact Baneshwari Tour & Travels" },
-      { property: "og:description", content: "Chat on WhatsApp, phone or email — we reply within minutes." },
+      { property: "og:description", content: "WhatsApp, phone ya email — kuch hi minute mein jawab." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -21,13 +21,13 @@ export const Route = createFileRoute("/contact")({
 
 function ContactPage() {
   const channels = [
-    { icon: MessageCircle, title: "WhatsApp", body: SITE.phone, href: waLink("Hi, I'd like to plan a trip."), cta: "Open chat", external: true },
-    { icon: Phone, title: "Call us", body: SITE.phone, href: SITE.phoneHref, cta: "Call now", external: false },
-    { icon: Mail, title: "Email", body: SITE.email, href: `mailto:${SITE.email}`, cta: "Send email", external: false },
+    { icon: MessageCircle, title: "WhatsApp", body: SITE.phone, href: waLink("राम राम सा! चित्तौड़गढ़ यात्रा plan करनी है।"), cta: "Chat खोलें", external: true },
+    { icon: Phone, title: "Call करें", body: SITE.phone, href: SITE.phoneHref, cta: "अभी call करें", external: false },
+    { icon: Mail, title: "Email", body: SITE.email, href: `mailto:${SITE.email}`, cta: "Email भेजें", external: false },
   ];
   return (
     <SiteShell>
-      <PageHero eyebrow="Ram ram sa" title="Let's plan your next trip.">The fastest way to reach us is WhatsApp—a real trip designer replies within minutes.</PageHero>
+      <PageHero eyebrow="राम राम सा" title="चलिए, आपकी यात्रा सजाते हैं।">सबसे तेज़ तरीका WhatsApp है — असली travel expert कुछ ही minute में जवाब देते हैं।</PageHero>
 
       <section className="mx-auto grid max-w-7xl gap-8 px-4 py-16 sm:px-6 md:grid-cols-3 lg:px-8">
         {channels.map((c) => (
@@ -48,7 +48,7 @@ function ContactPage() {
           <div className="flex items-start gap-3">
             <MapPin className="mt-1 h-5 w-5 text-primary" />
             <div>
-              <div className="font-display text-lg font-semibold text-navy">Visit our office</div>
+              <div className="font-display text-lg font-semibold text-navy">हमसे मिलिए</div>
               <p className="text-sm text-muted-foreground">{SITE.address}</p>
               <p className="mt-1 text-sm text-muted-foreground">Mon–Sat · 9:30 AM – 8:00 PM</p>
             </div>
@@ -57,7 +57,7 @@ function ContactPage() {
       </section>
 
       <section className="mx-auto max-w-4xl px-4 pb-24 sm:px-6 lg:px-8">
-        <h2 className="font-display text-3xl font-bold text-navy sm:text-4xl">Frequently asked</h2>
+        <h2 className="font-display text-3xl font-bold text-navy sm:text-4xl">अक्सर पूछे जाने वाले सवाल</h2>
         <div className="mt-8 divide-y divide-border rounded-3xl border border-border bg-card">
           {FAQS.map((f) => (
             <details key={f.q} className="group p-6 open:bg-secondary/30">

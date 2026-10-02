@@ -9,10 +9,10 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/packages")({
   head: () => ({
     meta: [
-      { title: "Tour Packages — Baneshwari Tour & Travels" },
-      { name: "description", content: "Explore handcrafted tour packages across Kerala, Kashmir, Rajasthan, Goa, Himachal and more. Book instantly on WhatsApp." },
-      { property: "og:title", content: "Tour Packages — Baneshwari Tour & Travels" },
-      { property: "og:description", content: "Handcrafted tour packages across India. Book instantly on WhatsApp." },
+      { title: "Yatra Packages — Baneshwari Tour & Travels" },
+      { name: "description", content: "Chittorgarh Garh Darshan, Sanwaliya Seth, Nathdwara, Udaipur, Kumbhalgarh-Haldighati aur Sampoorn Mewar packages. WhatsApp पर बुक करें।" },
+      { property: "og:title", content: "Yatra Packages — Baneshwari Tour & Travels" },
+      { property: "og:description", content: "Garh darshan se sampoorn Mewar tak — haath se bane yatra packages." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/packages")({
 function PackagesPage() {
   return (
     <SiteShell>
-      <PageHero eyebrow="Shahi safar" title="Curated tours across India">Every itinerary is a starting point—extend nights, upgrade hotels or blend two destinations. Chat on WhatsApp to make it yours.</PageHero>
+      <PageHero eyebrow="मेवाड़ यात्रा" title="गढ़ से संपूर्ण मेवाड़ तक">हर itinerary एक शुरुआत है — रातें बढ़ाइए, होटल अपग्रेड कीजिए या दो सर्किट जोड़िए। WhatsApp पर बात करके अपना बनाइए।</PageHero>
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -34,7 +34,7 @@ function PackagesPage() {
                 <img src={p.image} alt={p.title} loading="lazy" width={1200} height={900}
                      className="h-full w-full object-cover transition duration-700 group-hover:scale-110" />
                 <div className="absolute right-3 top-3 bg-card/95 px-3 py-1 text-xs font-semibold text-navy shadow-soft">
-                  From ₹{p.priceFrom.toLocaleString("en-IN")}
+                  ₹{p.priceFrom.toLocaleString("en-IN")} से
                 </div>
               </div>
               <div className="p-6">
@@ -50,9 +50,9 @@ function PackagesPage() {
                   ))}
                 </ul>
                 <div className="mt-5 flex items-center justify-between">
-                  <a href={waLink(`Hi, I'd like details for the ${p.title} package.`)} target="_blank" rel="noreferrer"
+                  <a href={waLink(`राम राम सा! मुझे ${p.title} package की details चाहिए।`)} target="_blank" rel="noreferrer"
                      className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition hover:brightness-110">
-                    <MessageCircle className="h-4 w-4" /> Book on WhatsApp
+                    <MessageCircle className="h-4 w-4" /> WhatsApp पर बुक करें
                   </a>
                   <div className="flex items-center gap-1 text-xs text-muted-foreground">
                     <Star className="h-3.5 w-3.5 fill-gold text-gold" /> 4.9
@@ -64,10 +64,10 @@ function PackagesPage() {
         </div>
 
         <div className="mt-16 border-4 border-gold bg-secondary/40 p-10 text-center">
-          <h3 className="font-display text-2xl font-semibold text-navy">Don't see the trip you had in mind?</h3>
-          <p className="mt-2 text-muted-foreground">We design 100% custom itineraries. Tell us your dates, budget and vibe.</p>
+          <h3 className="font-display text-2xl font-semibold text-navy">मन में कोई और यात्रा है?</h3>
+          <p className="mt-2 text-muted-foreground">हम 100% custom itinerary बनाते हैं — तारीख, बजट और मर्ज़ी बताइए।</p>
           <Link to="/contact" className="mt-6 inline-flex items-center gap-2 rounded-full bg-gradient-royal px-6 py-3 font-semibold text-primary-foreground">
-            Plan a custom trip
+            अपनी यात्रा बनवाएँ
           </Link>
         </div>
       </section>

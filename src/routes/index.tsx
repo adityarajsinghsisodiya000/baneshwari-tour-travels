@@ -57,7 +57,7 @@ function Index() {
                 fetchPriority="high"
               />
             </div>
-            <div className="absolute -left-3 top-10 border-2 border-gold bg-navy/95 px-4 py-2 text-sm font-bold text-gold shadow-elevated sm:-left-6">
+            <div className="absolute -right-3 top-10 border-2 border-gold bg-navy/95 px-4 py-2 text-sm font-bold text-gold shadow-elevated sm:-right-6">
               विजय स्तंभ
             </div>
             <div className="absolute -right-3 bottom-24 border-2 border-gold bg-navy/95 px-4 py-2 text-sm font-bold text-gold shadow-elevated sm:-right-6">

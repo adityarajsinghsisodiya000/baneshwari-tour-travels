@@ -27,11 +27,9 @@ function Index() {
   const circuit = DESTINATIONS.slice(0, 6);
   return (
     <SiteShell>
-      <section className="relative overflow-hidden border-b-4 border-gold bg-navy">
-        <img src={heroImage} alt="Chittorgarh Fort — Gaumukhi Kund aur Vijay Stambh" className="absolute inset-0 h-full w-full object-cover object-[center_30%]" width={1080} height={1440} />
-        <div className="absolute inset-0 bg-gradient-hero" />
+      <section className="heritage-panel relative overflow-hidden border-b-4 border-gold">
         <div className="bandhani-dots absolute inset-0 opacity-20" aria-hidden="true" />
-        <div className="relative mx-auto grid min-h-[86vh] max-w-7xl items-center px-4 py-16 sm:px-6 lg:grid-cols-[1.08fr_.92fr] lg:px-8">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[1.05fr_.95fr] lg:py-20 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="max-w-3xl text-primary-foreground">
             <div className="mb-7 w-fit rounded-sm bg-background p-3 shadow-elevated"><BrandLogo /></div>
             <span className="section-kicker border-gold/50 bg-background/10 text-gold"><Sparkles className="mr-2 h-3.5 w-3.5" /> गढ़ में गढ़ चित्तौड़गढ़</span>
@@ -43,12 +41,32 @@ function Index() {
               <Link to="/packages" className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/40 bg-background/10 px-7 py-3.5 font-semibold text-primary-foreground backdrop-blur transition-colors hover:bg-background/20">यात्रा packages <ArrowRight className="h-4 w-4" /></Link>
             </div>
           </motion.div>
-          <div className="hidden h-[34rem] items-end justify-end lg:flex">
-            <div className="w-72 border-4 border-gold/50 bg-navy/90 p-6 text-primary-foreground shadow-elevated">
-              <p className="font-hindi text-2xl text-gold">मेवाड़ की धरती</p>
-              <p className="mt-2 text-sm text-primary-foreground/75">स्थानीय मेवाड़ी गाइड, verified drivers और घर-जैसी मेहमाननवाज़ी।</p>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7 }}
+            className="relative mx-auto w-full max-w-md lg:max-w-none"
+          >
+            <div className="mehrab overflow-hidden border-4 border-gold shadow-elevated">
+              <img
+                src={heroImage}
+                alt="Chittorgarh Fort — Gaumukhi Kund aur Vijay Stambh"
+                className="h-auto w-full"
+                width={1080}
+                height={1440}
+                fetchPriority="high"
+              />
             </div>
-          </div>
+            <div className="absolute -left-3 top-10 border-2 border-gold bg-navy/95 px-4 py-2 text-sm font-bold text-gold shadow-elevated sm:-left-6">
+              विजय स्तंभ
+            </div>
+            <div className="absolute -right-3 bottom-24 border-2 border-gold bg-navy/95 px-4 py-2 text-sm font-bold text-gold shadow-elevated sm:-right-6">
+              गौमुखी कुंड
+            </div>
+            <div className="absolute -bottom-6 left-1/2 w-max -translate-x-1/2 border-2 border-gold bg-background px-5 py-2 text-center shadow-elevated">
+              <p className="font-hindi text-lg leading-none text-primary">मेवाड़ की धरती</p>
+            </div>
+          </motion.div>
         </div>
         <div className="heritage-stripe" aria-hidden="true" />
       </section>

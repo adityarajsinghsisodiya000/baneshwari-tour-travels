@@ -63,9 +63,9 @@
   --color-gold-foreground: var(--gold-foreground);
   --color-navy: var(--navy);
   --color-whatsapp: var(--whatsapp);
-  --font-display: "Libre Baskerville", Georgia, serif;
-  --font-hindi: "Yatra One", "Libre Baskerville", Georgia, serif;
-  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Libre Baskerville", "Rozha One", Georgia, serif;
+  --font-hindi: "Yatra One", "Rozha One", Georgia, serif;
+  --font-sans: "IBM Plex Sans", "Mukta", ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {

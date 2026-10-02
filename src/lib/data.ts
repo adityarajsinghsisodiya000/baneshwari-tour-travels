@@ -1,8 +1,5 @@
-import agra from "@/assets/dest-agra.jpg";
-import rajasthan from "@/assets/dest-rajasthan.jpg";
-import kashmir from "@/assets/pkg-kashmir.jpg";
-import ooty from "@/assets/pkg-ooty.jpg";
-import backwaters from "@/assets/hero-backwaters.jpg";
+import garhBanner from "@/assets/garh-banner.jpg";
+import lake from "@/assets/pkg-kashmir.jpg";
 
 export type Package = {
   slug: string;
@@ -22,7 +19,7 @@ export const PACKAGES: Package[] = [
     destination: "Chittorgarh",
     duration: "1 Day (Same Day)",
     priceFrom: 1999,
-    image: rajasthan,
+    image: garhBanner,
     tagline: "विजय स्तंभ से जौहर कुंड तक — पूरा गढ़, एक दिन में।",
     highlights: ["Vijay Stambh & Kirti Stambh", "Meera Mandir & Kumbha Mahal", "Padmini Mahal & Gaumukhi Kund", "Local Mewadi guide"],
   },
@@ -32,7 +29,7 @@ export const PACKAGES: Package[] = [
     destination: "Chittorgarh · 45 km",
     duration: "1–2 Days",
     priceFrom: 2499,
-    image: agra,
+    image: lake,
     tagline: "श्री सांवलिया सेठ के तीनों मंदिर + शनि मंदिर दर्शन।",
     highlights: ["Teenon mandir darshan", "Shani mandir", "Bhog-prasad vyavastha", "AC vehicle sahit"],
   },
@@ -42,7 +39,7 @@ export const PACKAGES: Package[] = [
     destination: "Chittorgarh · Udaipur",
     duration: "3 Nights / 4 Days",
     priceFrom: 14999,
-    image: backwaters,
+    image: garhBanner,
     tagline: "गढ़ का शौर्य, झीलों की नगरी — दोनों एक सफ़र में।",
     highlights: ["Garh darshan with guide", "City Palace & Pichola Lake", "Saheliyon ki Badi", "Fatehsagar boat ride"],
   },
@@ -52,7 +49,7 @@ export const PACKAGES: Package[] = [
     destination: "Nathdwara · Rajsamand",
     duration: "2 Nights / 3 Days",
     priceFrom: 8999,
-    image: ooty,
+    image: lake,
     tagline: "श्रीनाथजी, विश्वास स्वरूपम्, एकलिंगजी — मेवाड़ के तीर्थ।",
     highlights: ["Shrinathji mandir", "Vishwas Swaroopam", "Eklingji & Ganesh Tekri", "Rajsamand Lake"],
   },
@@ -62,7 +59,7 @@ export const PACKAGES: Package[] = [
     destination: "Haldighati · Kumbhalgarh",
     duration: "2 Nights / 3 Days",
     priceFrom: 9499,
-    image: kashmir,
+    image: garhBanner,
     tagline: "हल्दीघाटी की माटी, कुंभलगढ़ की दीवार — वीरों की धरती।",
     highlights: ["Haldighati battlefield", "Kumbhalgarh Fort", "Charbhuja Nath", "Maharana Pratap Gaurav Kendra"],
   },
@@ -72,7 +69,7 @@ export const PACKAGES: Package[] = [
     destination: "5 Sheher · 1 Yatra",
     duration: "5 Nights / 6 Days",
     priceFrom: 21999,
-    image: rajasthan,
+    image: lake,
     tagline: "चित्तौड़गढ़, उदयपुर, नाथद्वारा, कुंभलगढ़ — पूरा मेवाड़।",
     highlights: ["Garh + Lakes + Teerth", "Private vehicle throughout", "Heritage haveli stay", "Family-customisable"],
   },
@@ -80,12 +77,12 @@ export const PACKAGES: Package[] = [
 
 export type Destination = { slug: string; name: string; region: string; image: string; packagesCount: number };
 export const DESTINATIONS: Destination[] = [
-  { slug: "chittorgarh-garh", name: "Chittorgarh Garh", region: "गढ़ों का गढ़", image: rajasthan, packagesCount: 6 },
-  { slug: "sanwaliya-seth", name: "Sanwaliya Seth", region: "45 km · Teerth", image: agra, packagesCount: 3 },
-  { slug: "nathdwara", name: "Nathdwara", region: "Shrinathji · Vishwas Swaroopam", image: ooty, packagesCount: 4 },
-  { slug: "udaipur", name: "Udaipur", region: "झीलों की नगरी", image: backwaters, packagesCount: 5 },
-  { slug: "kumbhalgarh-haldighati", name: "Kumbhalgarh · Haldighati", region: "वीरता सर्किट", image: kashmir, packagesCount: 4 },
-  { slug: "rajsamand-teerth", name: "Rajsamand · Eklingji", region: "तीर्थ सर्किट", image: agra, packagesCount: 3 },
+  { slug: "chittorgarh-garh", name: "Chittorgarh Garh", region: "गढ़ों का गढ़", image: garhBanner, packagesCount: 6 },
+  { slug: "sanwaliya-seth", name: "Sanwaliya Seth", region: "45 km · Teerth", image: lake, packagesCount: 3 },
+  { slug: "nathdwara", name: "Nathdwara", region: "Shrinathji · Vishwas Swaroopam", image: garhBanner, packagesCount: 4 },
+  { slug: "udaipur", name: "Udaipur", region: "झीलों की नगरी", image: lake, packagesCount: 5 },
+  { slug: "kumbhalgarh-haldighati", name: "Kumbhalgarh · Haldighati", region: "वीरता सर्किट", image: garhBanner, packagesCount: 4 },
+  { slug: "rajsamand-teerth", name: "Rajsamand · Eklingji", region: "तीर्थ सर्किट", image: lake, packagesCount: 3 },
 ];
 
 export const FORT_FACTS = [
@@ -130,4 +127,4 @@ export const FAQS = [
   { q: "क्या यात्रा family के हिसाब से customise होगी?", a: "बिल्कुल — बुजुर्गों के लिए धीमी गति, बच्चों के साथ ठहराव, होटल अपग्रेड या दर्शन-क्रम — सब आपकी सुविधा से तय होता है।" },
 ];
 
-export const heroImage = rajasthan;
+export const heroImage = garhBanner;

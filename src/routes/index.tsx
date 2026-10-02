@@ -28,7 +28,7 @@ function Index() {
   return (
     <SiteShell>
       <section className="relative overflow-hidden border-b-4 border-gold bg-navy">
-        <img src={heroImage} alt="Chittorgarh Fort — गढ़ में गढ़ चित्तौड़गढ़" className="absolute inset-0 h-full w-full object-cover" width={1920} height={1200} />
+        <img src={heroImage} alt="Chittorgarh Fort — Gaumukhi Kund aur Vijay Stambh" className="absolute inset-0 h-full w-full object-cover object-[center_30%]" width={1080} height={1440} />
         <div className="absolute inset-0 bg-gradient-hero" />
         <div className="bandhani-dots absolute inset-0 opacity-20" aria-hidden="true" />
         <div className="relative mx-auto grid min-h-[86vh] max-w-7xl items-center px-4 py-16 sm:px-6 lg:grid-cols-[1.08fr_.92fr] lg:px-8">
